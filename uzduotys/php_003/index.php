@@ -60,7 +60,14 @@ $liekana = $x % $y;
 <p><?php echo "$x / $y = $dalyba"; ?></p>
 <p><?php echo "$x % $y = $liekana"; ?></p>
 
-    
+
+<?php
+$sk1 = 7;
+$sk2 = 10;
+$suma = $sk1 + $sk2; // Skaičių suma
+
+echo "{$sk1} + {$sk2} = {$suma}"; // Išvedama suma
+?>
 
 </body>
 
