@@ -21,7 +21,34 @@
     }
     ?>
 
-<form action="" method="GET">
+<?php
+
+if (
+    isset($_GET['first_name'])
+    && trim($_GET['first_name']) != ''
+    && isset($_GET['city'])
+    && trim($_GET['city']) != ''
+) {
+    echo '<h2>Sveiki ' . $_GET['first_name'] . '. Kaip laikosi ' . $_GET['city'] . '?</h2>';
+    // Sveiki Kazimiras. Kaip laikosi Kaunas?
+} else {
+    echo '<h2>Sveiki nepažįstamasis. Gal norite užsiregistruoti?</h2>';
+}
+
+?>
+
+
+<form action="http://localhost/240213WEB160VAK_BE/paskaitos/php_03/validation.php" method="GET">
+        <label for="first_name_field">Vardas: </label>
+        <input id="first_name_field" type="text" name="first_name" required>
+        <br>
+        <label for="city_field">Miestas: </label>
+        <input id="city_field" type="text" name="city" required>
+        <br>
+        <button>Pateikti</button>
+    </form>
+
+    <form action="http://localhost/240213WEB160VAK_BE/paskaitos/php_03/validation.php" method="POST">
         <label for="first_name_field">Vardas: </label>
         <input id="first_name_field" type="text" name="first_name" required>
         <br>
