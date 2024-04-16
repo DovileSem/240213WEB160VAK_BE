@@ -62,4 +62,25 @@ SELECT * FROM `knygos` WHERE `kaina` > 15 AND `kaina` < 20 OR `puslapiu_skaicius
 SELECT * FROM `knygos` WHERE (`kaina` > 15 AND `kaina` < 20) OR (`puslapiu_skaicius` > 300 AND `puslapiu_skaicius` < 600);
 
 
+-- Neiginys
 
+SELECT * FROM `knygos` WHERE `kaina`!= 7.80;
+SELECT * FROM `knygos` WHERE NOT `kaina`!= 7.80;
+
+SELECT * FROM `knygos` WHERE `kaina` IS NULL;
+SELECT * FROM `knygos` WHERE `kaina` IS NOT NULL;
+
+-- Su konkreciom kainom
+SELECT * FROM `knygos` WHERE `kaina` IN (7.80, 12.50, 50.99);
+
+
+
+SELECT * FROM `knygos` WHERE `id` IN ( SELECT `id` FROM `autoriai` WHERE `pavarde` = 'tolkien' OR `pavarde` = 'martin' )
+
+-- Randa pagal raide
+
+SELECT * FROM `autoriai` WHERE `pavarde` LIKE '%B%';
+
+--  Iesko zodzio dviejuose stulpeliuose
+
+SELECT * FROM `autoriai` WHERE `pavarde` LIKE '%jon%' OR `vardas`'%jon%';
