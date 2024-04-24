@@ -1,0 +1,300 @@
+/*
+Theme Name: Mano projektas
+*/
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font: inherit;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.banner {
+    width: 100%;
+    height: 850px;
+    background-size: cover;
+    background-position: center;
+}
+
+.tower-header { 
+    background: white; 
+    font-size: 20px; 
+    text-transform: uppercase; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    width: 140px;
+    padding: 15px;
+    margin: 0 10px;
+    border-top: 2px solid rgb(233,233,233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+  nav li.active { font-weight: 700; }
+  nav li#page1_link.active, nav li#page1_link:hover { border-top-color: #B29E66; }
+  nav li#page2_link.active, nav li#page2_link:hover { border-top-color: #3E88A3; }
+  nav li#page3_link.active, nav li#page3_link:hover { border-top-color: #B23573; }
+  nav li#page4_link.active, nav li#page4_link:hover { border-top-color: #818089; }
+  nav li#page5_link.active, nav li#page5_link:hover { border-top-color: #50AF98; }
+
+nav {
+    overflow: hidden;
+    position: inherit;
+}
+
+.fix {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    /* display: none; */
+    top: 0;
+    left: 0;
+
+}
+
+  #page2 {
+        z-index: 4;
+        background: #0A758F;
+        width: 100%;
+        color: white;
+        overflow: hidden;
+  }
+
+.services-list {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.templatemo-item {
+    padding: 10px;
+    width: 33.33333%;
+    text-align: center;
+}
+
+.templatemo-item h3 {
+    font-size: 25px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.templatemo-item p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.rounded.fa {
+    font-size: 1.6em;
+    color: rgb(233, 233, 233);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 27px 25px 25px 25px;
+    width: 80px;
+    height: 78px;
+}
+
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mūsų klientai nuomojantys ofisus */
+
+.client {
+    width: 100%;
+    background-color: #0A758F;
+}
+
+.templatemo-client {
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+}
+
+.templatemo-client img {
+    width: 100%;
+    height: 85%;
+}
+
+  .client {
+    text-align: center;
+    color: #fff;
+  }
+
+  .client-container {
+    display: inline-block;
+  }
+
+  .client-container img {
+    margin: 0 10px; /* Papildomas tarpas tarp klientų logotipų */
+  }
+
+
+.contact {
+    background-color: #0A758F;
+    padding-bottom: 75px;
+}
+
+.contact .container {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.form-container {
+    width: 80%;    
+}
+
+.form-container {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.map {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
+}
+
+
+.form-container h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0px;
+}
+
+.contact-form {
+    width: 100%;
+    font-size: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 0.3rem;
+}
+
+
+.contact-form textarea {
+    resize: none;
+    height: 180px;
+    font-size: 1rem;
+}
+
+.contact-form .send-button {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+#footer {
+    width: 100%;
+    height: 200px;
+    background-color: #656e75;
+   
+}
+
+/* Puslapio apačioje esantys kontaktai */
+
+footer {
+    background-color: #0e5769;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-content p {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.email-link {
+    color: white;
+    text-decoration: none;
+}
+
+.phone-link {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* Glide stiliai */
+
+.glide__slide img {
+    width: 100%;
+    height: auto;
+  }
+
+  .glide img {
+    width: 100%;
+}
+
+.glide {
+    background: #0A758F
+}
